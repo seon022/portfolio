@@ -1,8 +1,23 @@
-import { Mail, Github, Linkedin } from "lucide-react";
+import { useScrollAnimation } from "@hooks/useScrollAnimation";
+import { Mail, Github } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
+	const { ref, isVisible } = useScrollAnimation();
 	return (
 		<section id="contact" className="text-center mb-16">
+			{" "}
+			<div className="container-custom" ref={ref}>
+				{/* Title */}
+				<motion.h2
+					initial={{ opacity: 0, y: 30 }}
+					animate={isVisible ? { opacity: 1, y: 0 } : {}}
+					transition={{ duration: 0.6 }}
+					className="text-3xl md:text-4xl font-bold text-center mb-12"
+				>
+					<span className="text-gradient">Contact</span>
+				</motion.h2>
+			</div>
 			<div className="flex justify-center gap-6 mb-4">
 				<a
 					href="https://github.com/seon022"
@@ -12,16 +27,7 @@ const Contact = () => {
 				>
 					<Github size={24} />
 				</a>
-				<a
-					href="https://www.linkedin.com/in/%EC%84%A0%EC%98%81-%EA%B0%95-4ab2822ba/"
-					target="_blank"
-					rel="noopener noreferrer"
-					className="hover:text-blue-700"
-				>
-					<Linkedin size={24} />
-				</a>
 			</div>
-
 			<div className="flex justify-center mb-4">
 				<a
 					href="mailto:seon02d@gmail.com"
@@ -31,7 +37,6 @@ const Contact = () => {
 					seon02d@gmail.com
 				</a>
 			</div>
-
 			<p className="text-sm text-gray-400">
 				© {new Date().getFullYear()} Kang Seonyoung. All rights reserved.
 			</p>

@@ -94,7 +94,15 @@ function ProjectDetailPage() {
 							)}
 						</div>
 					</header>
-
+					{project.image && (
+						<div className="w-full h-auto overflow-hidden rounded-lg shadow">
+							<img
+								src={project.image}
+								alt={`${project.image}`}
+								className="w-full h-full object-contain object-cover"
+							/>
+						</div>
+					)}
 					{project.imageList && (
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 							{project.imageList.map((src, idx) => (
@@ -153,37 +161,6 @@ function ProjectDetailPage() {
 									<li key={idx}>{item}</li>
 								))}
 							</ul>
-						</div>
-
-						{/* Problem Solving */}
-						<div>
-							<h2 className="section-title mb-2">문제 해결 과정</h2>
-
-							<div className="space-y-6">
-								{project.detail.extras.problemSolving.map((entry, idx) => (
-									<div
-										key={idx}
-										className="p-5 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm"
-									>
-										<p className="font-bold text-lg">
-											⚠️ 문제:{" "}
-											<span className="font-medium">{entry.problem}</span>
-										</p>
-
-										<p className="mt-2">
-											✅ <span className="font-semibold">해결:</span>{" "}
-											{entry.solution}
-										</p>
-
-										{entry.result && (
-											<p className="mt-2 text-green-600 dark:text-green-400">
-												⭐ <span className="font-semibold">결과:</span>{" "}
-												{entry.result}
-											</p>
-										)}
-									</div>
-								))}
-							</div>
 						</div>
 					</section>
 				</div>

@@ -6,7 +6,7 @@ export const projects = [
 			"Spotify Web API를 활용해 인증 기반 음악 검색과 플레이리스트 기능을 구현한 개인 프로젝트.",
 		period: "2025.06 (1개월)",
 		role: "Frontend 개발 / API 연동 / 인증 구조 설계",
-		tech: ["React", "TypeScript", "React Query", "Spotify API"],
+		tech: ["React", "TypeScript", "React Query", "Spotify API", "MUI"],
 		image: "/spotify-clone.png",
 		imageList: ["/spotify-clone.png", "/spotify-search.png"],
 		github: "https://github.com/seon022/Koalnu-spotify-demo",
@@ -15,7 +15,7 @@ export const projects = [
 
 		detail: {
 			overview:
-				"Spotify API 기반으로 OAuth 인증, 음악 검색, 재생 목록 구현까지 포함한 기능 중심 클론 프로젝트입니다.",
+				"Spotify API 기반으로 음악 검색, 재생 목록 구현까지 포함한 기능 중심 클론 프로젝트입니다.",
 			members: 1,
 
 			contributions: [
@@ -64,7 +64,7 @@ export const projects = [
 			"MUI",
 		],
 		image: "/miru-gotchi.png",
-		imageList: ["/miru-gotchi.png", "/miru-gotchi-list.png"],
+		imageList: ["/miru-gotchi-logo.png", "/miru-gotchi-list.png"],
 		github: "https://github.com/seon022/MIRU-GOTCHI",
 		demo: "https://miru-gotchi.netlify.app/",
 		tags: [
@@ -78,19 +78,17 @@ export const projects = [
 
 		detail: {
 			overview:
-				"하루 목표 체크에 따라 캐릭터의 성장 단계가 변하는 게임형 습관 관리 서비스입니다.",
+				"하루 목표 체크에 따라 캐릭터의 성장 단계가 변하는 습관 관리 웹앱입니다.",
 			members: 4,
 
 			contributions: [
 				"Firebase Auth 기반 Google 로그인 기능 구현",
 				"Firestore 기반 목표 CRUD 및 실시간 데이터 연동",
-				"사용자 체크 기록에 따라 캐릭터 성장 로직(경험치 → 레벨) 설계",
 				"팀 협업을 위한 Vite + TS 개발 환경 설정",
 			],
 
 			extras: {
 				techDecisions: [
-					"Firebase Firestore를 사용해 실시간 데이터 업데이트를 UI에 즉시 반영",
 					"반복되는 데이터 처리 로직을 custom hook으로 분리해 재사용성 강화",
 					"Styled Components로 팀 협업 시 스타일 모듈화 및 유지보수성 확보",
 				],
@@ -111,14 +109,14 @@ export const projects = [
 
 	{
 		id: "korea-museum",
-		title: "국립중앙박물관 반응형 홈페이지",
+		title: "국립중앙박물관 클론 프로젝트",
 		description:
 			"국립중앙박물관 기존 홈페이지를 UI 개선 및 반응형 기반으로 재구성한 퍼블리싱 중심 프로젝트.",
 		period: "2023.12 (1개월)",
 		role: "퍼블리싱 / 반응형 레이아웃 설계 / UI 구조 개선",
 		tech: ["HTML", "CSS", "JavaScript", "Responsive Web"],
-		image: "/museum-main.png",
-		imageList: ["/museum-main.png"],
+		image: "/museum-pc.png",
+		imageList: ["/museum-mobile.png", "/museum-mobile2.png"],
 		github: "https://github.com/seon022/project02-museum",
 		demo: "https://ksy-project-koreamuseum.netlify.app/",
 		tags: ["HTML", "CSS", "JavaScript", "Responsive Web", "UI Redesign"],
@@ -137,20 +135,7 @@ export const projects = [
 			extras: {
 				techDecisions: [
 					"여러 해상도에서 가독성을 확보하기 위해 모바일 퍼스트 전략 도입",
-					"복잡한 레이아웃은 CSS Grid, 일반 UI는 Flexbox로 구성",
-					"이미지 성능 개선을 위해 srcset + lazy-loading 적용",
-				],
-				problemSolving: [
-					{
-						problem: "초고해상도 이미지로 인한 초기 로딩 지연",
-						solution:
-							"srcset과 lazy-loading을 활용해 해상도별 최적 이미지 제공",
-					},
-					{
-						problem: "기존 사이트는 모바일 UI가 없어 레이아웃이 깨짐",
-						solution:
-							"명확한 breakpoint 정의 후 모바일·태블릿·PC 3단계 반응형 설계",
-					},
+					"이미지 성능 개선을 위해 lazy-loading 적용",
 				],
 			},
 		},

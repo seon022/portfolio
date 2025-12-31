@@ -80,7 +80,7 @@ const About = () => {
 							transition={{ delay: 0.3, duration: 0.6 }}
 							className="text-3xl md:text-4xl font-bold mt-2 mb-6"
 						>
-							함께 성장하는 <br />
+							함께 일하고 싶은 <br />
 							<span className="text-gradient dark:from-blue-400 dark:to-purple-400 from-blue-600 to-purple-600">
 								신입 프론트엔드 개발자 강선영
 							</span>
@@ -93,8 +93,8 @@ const About = () => {
 							className="space-y-4 text-lg leading-relaxed"
 						>
 							<p>
-								웹을 통해 사람들의 일상이 더 편리해질 수 있다는 점이 매력적이라
-								프론트엔드 개발을 선택했습니다.
+								문제점을 해결하여 사용자 경험을 직관적으로 개선할 수 있다는 점이
+								매력적이라 프론트엔드 개발을 선택했습니다.
 							</p>
 							<p>
 								디자인을 코드로 구현하며, 구조적이고 재사용 가능한 UI를 만드는
