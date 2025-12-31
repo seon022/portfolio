@@ -19,16 +19,13 @@ export const projects = [
 			members: 1,
 
 			contributions: [
-				"OAuth 인증 흐름 전체 설계 및 구현",
 				"React Query 기반 API 상태 관리 및 캐싱 전략 구성",
 				"메인 검색 화면 및 재생 목록 UI 개발",
-				"API 호출 구조 정리 및 에러 핸들링 통합",
 			],
 
 			extras: {
 				techDecisions: [
 					"서버 상태는 React Query로 관리하여 요청 중복 최소화 및 캐싱 최적화",
-					"Refresh Token 로직을 직접 설계해 만료 주기가 짧은 Spotify OAuth 토큰 안정화",
 					"UI 전역 상태는 단순성을 고려해 Zustand로 관리",
 				],
 				problemSolving: [
