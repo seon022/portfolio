@@ -30,7 +30,7 @@ const Hero = () => {
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ delay: 0.5, duration: 1 }}
-				className="relative z-10 mt-6 text-lg md:text-xl text-gray-600 dark:text-gray-300"
+				className="relative z-10 mt-6 text-lg md:text-xl text-gray-400"
 			>
 				SeonYoung • Frontend Developer
 			</motion.p>
@@ -76,7 +76,8 @@ const Hero = () => {
 				animate={{ opacity: 1 }}
 				transition={{ delay: 1.5 }}
 				className="
-		relative z-10 mt-20 text-gray-500 dark:text-gray-400 text-sm
+		relative z-10 mt-20 text-gray-200 dark:text-gray-400 
+		text-xs sm:text-sm md:text-base
 		hover:text-blue-500 dark:hover:text-blue-300
 		transition-colors
 		focus:outline-none

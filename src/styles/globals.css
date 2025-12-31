@@ -17,9 +17,9 @@
 	--color-danger: #ef4444;
 
 	/* Background Colors */
-	--bg-primary: #ffffff;
-	--bg-secondary: #f8fafc;
-	--bg-tertiary: #f1f5f9;
+	--bg-primary: #eef1f5;
+	--bg-secondary: #f9fafb;
+	--bg-tertiary: #e2e8f0;
 	--bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 
 	/* Text Colors */

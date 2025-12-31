@@ -80,10 +80,10 @@ const About = () => {
 							transition={{ delay: 0.3, duration: 0.6 }}
 							className="text-3xl md:text-4xl font-bold mt-2 mb-6"
 						>
-							함께 일하고 싶은 <br />
-							<span className="text-gradient dark:from-blue-400 dark:to-purple-400 from-blue-600 to-purple-600">
+							함께 일하고 싶은
+							<div className="text-gradient dark:from-blue-400 dark:to-purple-400 from-blue-600 to-purple-600 mt-2">
 								신입 프론트엔드 개발자 강선영
-							</span>
+							</div>
 						</motion.h2>
 
 						<motion.div
