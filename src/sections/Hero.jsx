@@ -76,7 +76,7 @@ const Hero = () => {
 				animate={{ opacity: 1 }}
 				transition={{ delay: 1.5 }}
 				className="
-		relative z-10 mt-20 text-gray-200 dark:text-gray-400 
+		relative z-10 mt-20 text-gray-400 
 		text-xs sm:text-sm md:text-base
 		hover:text-blue-500 dark:hover:text-blue-300
 		transition-colors
