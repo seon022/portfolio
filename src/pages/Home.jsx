@@ -5,6 +5,7 @@ import Education from "@sections/Education";
 import Projects from "@sections/Projects";
 import { useEffect } from "react";
 import Contact from "@sections/Contact";
+import Footer from "@components/layout/Footer";
 
 const Home = () => {
 	useEffect(() => {
@@ -28,6 +29,7 @@ const Home = () => {
 				<Education />
 				<Contact />
 			</main>
+			<Footer />
 		</>
 	);
 };

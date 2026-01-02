@@ -37,9 +37,6 @@ const Contact = () => {
 					seon02d@gmail.com
 				</a>
 			</div>
-			<p className="text-sm text-gray-400">
-				© {new Date().getFullYear()} Kang Seonyoung. All rights reserved.
-			</p>
 		</section>
 	);
 };
